@@ -8,11 +8,11 @@ public class Main {
     public static void main(String[] args) {
         String[] str = new String[6];
         str[0] = "-i";         // Режим ввода
-        str[1] = "-a";         // Режим сортировки (по возрастанию)
+        str[1] = "-d";         // Режим сортировки (по умолчанию: возрастанию)
         str[2] = "out.txt";    // Выходной файл
-        str[3] = "in1.txt";    // Первый входной файл
-        str[4] = "in2.txt";    // Второй входной файл
-        str[5] = "in3.txt";    // Третий входной файл
+        str[3] = "in1.txt";    // Первый входной файл (так же есть файл str1.txt в нем слова)
+        str[4] = "in2.txt";    // Второй входной файл (так же есть файл str2.txt в нем слова)
+        str[5] = "in3.txt";    // Третий входной файл (так же есть файл str3.txt в нем слова)
 
         try {
             var argumentParser = new ArgumentParser();                    // Создаю ArgumentParser для парсинга аргументов
